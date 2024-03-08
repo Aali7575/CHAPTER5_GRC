@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Django blog</title>
+</head>
+<body>
+    <header>
+        <h1><a href = "{% url 'home' %}"></a></h1>
+        <h2 class = "bg-red-500">Tafadzwa Ndoro</h2>
+    </header>
+    <div>
+        {% block content %}
+        {% endblock content %}
+    </div>
+
+</body>
+</html>
